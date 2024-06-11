@@ -13,3 +13,11 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
+$(document).ready(function() {
+    var currentUrl = window.location.href; // Récupère l'URL actuelle
+
+    // Met à jour les meta tags avec l'URL actuelle
+    $('#og-url').attr('content', currentUrl);
+    $('#twitter-url').attr('content', currentUrl);
+});
